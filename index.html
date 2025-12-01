@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Geoportal</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fa-solid fa-map-location-dot"></i> GEOPORTAL</h2>
+            <p>Geographic Information System</p>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fa-solid fa-layer-group"></i> LAYERS</h3>
+                </div>
+                <div id="layers-container" class="card-body">
+                    </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fa-solid fa-earth-americas"></i> BASE MAPS</h3>
+                </div>
+                <div class="card-body basemaps">
+                    <label class="radio-item">
+                        <input type="radio" name="basemap" value="osm" checked onchange="changeBasemap('osm')">
+                        <span class="radio-custom"></span>
+                        <span>OpenStreetMap</span>
+                    </label>
+                    <label class="radio-item">
+                        <input type="radio" name="basemap" value="sat" onchange="changeBasemap('sat')">
+                        <span class="radio-custom"></span>
+                        <span>Google Satellite</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fa-solid fa-chart-pie"></i> STATISTICS</h3>
+                </div>
+                <div class="stats-header-row">
+                    <span>Layer Name</span>
+                    <span>N° Objects</span>
+                </div>
+                <div id="stats-container" class="card-body stats-body">
+                    <div class="loading-stats">Loading stats...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <small>&copy; 2025 Powered by Supabase & Leaflet</small>
+        </div>
+    </div>
+
+    <div id="global-loader" class="loader-container">
+        <div class="spinner"></div>
+        <p>Loading Data...</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
