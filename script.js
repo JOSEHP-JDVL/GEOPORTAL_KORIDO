@@ -8,18 +8,20 @@ const layersConfig = [
     { table: 'ravines', type: 'point', color: '#e63946', label: 'Ravines points' },
     { table: 'gestion_dechet', type: 'point', color: '#d35400', label: 'Gestion Dechet' },
     { table: 'protection_resurgence', type: 'point', color: '#3498db', label: 'Protection resurgence' },
+    { table: 'zones_prioritaires', type: 'point', color: '#e67e22', label: 'Zones prioritaires'},
+    { table: 'control_dams', type: 'point', color:'#1abc9c', label: 'Control dams'},
     
     // LINES
     { table: 'line_protection_riviere', type: 'line', color: '#f1c40f', label: 'Line protection riviere' },
     { table: 'projection_de_ravins', type: 'line', color: '#2980b9', label: 'Projection de ravins' },
     
     // POLYGONS
-    { table: 'zone_de_culture_perenne_100m', type: 'polygon', color: '#2ecc71', label: 'Zone de culture perenne' },
-    { table: 'limite_baraderes_cayemites', type: 'polygon', color: '#27ae60', label: 'Limite Baraderes' },
     { table: 'parcelle_socioeconomique', type: 'polygon', color: '#f39c12', label: 'Parcelle Socioec.' },
     { table: 'restauration_mangroves', type: 'polygon', color: '#16a085', label: 'Restauration mangroves' },
     { table: 'versants_degrades', type: 'polygon', color: '#c0392b', label: 'Versants degrades' },
-    { table: 'zone_bande_riveraine_15m', type: 'polygon', color: '#8e44ad', label: 'Zone bande riveraine' }
+    { table: 'zone_bande_riveraine_15m', type: 'polygon', color: '#8e44ad', label: 'Zone bande riveraine' },
+    { table: 'zone_de_culture_perenne_100m', type: 'polygon', color: '#2ecc71', label: 'Zone de culture perenne' },
+    { table: 'limite_baraderes_cayemites', type: 'polygon', color: '#27ae60', label: 'Limite Baraderes' }
 ];
 
 // Map Initialization
@@ -202,4 +204,5 @@ async function initApp() {
 }
 
 // Start
+
 initApp();
