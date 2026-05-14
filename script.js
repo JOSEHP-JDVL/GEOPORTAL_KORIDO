@@ -21,6 +21,7 @@ const layersConfig = [
     { table: 'versants_degrades', type: 'polygon', color: '#c0392b', label: 'Versants degrades' },
     { table: 'zone_bande_riveraine_15m', type: 'polygon', color: '#8e44ad', label: 'Zone bande riveraine' },
     { table: 'zone_de_culture_perenne_100m', type: 'polygon', color: '#2ecc71', label: 'Zone de culture perenne' },
+    { table: 'breche_total', type: 'polygon', color: '#d4ac0d', label: 'Breches' },
     { table: 'limite_baraderes_cayemites', type: 'polygon', color: '#27ae60', label: 'Limite Baraderes' }
 ];
 
