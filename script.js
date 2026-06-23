@@ -10,6 +10,7 @@ const layersConfig = [
     { table: 'protection_resurgence', type: 'point', color: '#3498db', label: 'Protection resurgence' },
     { table: 'zones_prioritaires', type: 'point', color: '#e67e22', label: 'Zones prioritaires'},
     { table: 'control_dams', type: 'point', color:'#1abc9c', label: 'Control dams'},
+    { table: 'parcelles_de_cacao', type: 'point', color: '#f1c40f', label: 'Parcelles de cacao' },
     
     // LINES
     { table: 'line_protection_riviere', type: 'line', color: '#f1c40f', label: 'Line protection riviere' },
