@@ -19,6 +19,7 @@ const layersConfig = [
     
     // POLYGONS
     { table: 'parcelle_socioeconomique', type: 'polygon', color: '#f39c12', label: 'Parcelle Socioec.' },
+    { table: 'parcelles_cacao_ayitika', type: 'polygon', color: '#00BFFF', label: 'Parcelles cacao AYITIKA' },
     { table: 'restauration_mangroves', type: 'polygon', color: '#16a085', label: 'Restauration mangroves' },
     { table: 'versants_degrades', type: 'polygon', color: '#c0392b', label: 'Versants degrades' },
     { table: 'zone_bande_riveraine_15m', type: 'polygon', color: '#8e44ad', label: 'Zone bande riveraine' },
