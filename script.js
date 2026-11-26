@@ -10,11 +10,13 @@ const layersConfig = [
     { table: 'protection_resurgence', type: 'point', color: '#3498db', label: 'Protection resurgence' },
     { table: 'zones_prioritaires', type: 'point', color: '#e67e22', label: 'Zones prioritaires'},
     { table: 'control_dams', type: 'point', color:'#1abc9c', label: 'Control dams'},
+    { table: 'trace_points_ayitika', type: 'point', color:'#00FFFF', label: 'Trace points AYITIKA'},
     { table: 'parcelles_de_cacao', type: 'point', color: '#f1c40f', label: 'Parcelles de cacao' },
     { table: 'parcelles_de_cacao2', type: 'point', color: '#ff00ff', label: 'Parcelles ORE' },
     
     // LINES
     { table: 'line_protection_riviere', type: 'line', color: '#f1c40f', label: 'Line protection riviere' },
+    { table: 'trace_ligne_ayitika', type: 'line', color: '#FF00FF', label: 'Trace ligne AYITIKA' },
     { table: 'projection_de_ravins', type: 'line', color: '#2980b9', label: 'Projection de ravins' },
     
     // POLYGONS
